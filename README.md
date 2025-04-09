@@ -68,11 +68,12 @@ qualifiers» расположен элемент «Orientation», который
 
 ![image](https://github.com/user-attachments/assets/fb8078a5-6606-47a8-a7fd-57744001da3d) ![image](https://github.com/user-attachments/assets/73868d80-b1cd-4269-a2f0-f484d3fd2a7e)
 
-Заключительным шагом было необходимо создать новый модуль, а именно в меню «File>New>New Module>Phone & Tablet
+Заключительным шагом необходимо было создать новый модуль, а именно в меню «File>New>New Module>Phone & Tablet
 Module>Empty Activity» проект «ButtonClicker». По нажатию кнопки меняется содержимое «TextView».
 По нажатию кнопки «WhoAmI» – выводится текст: «Мой номер по списку № 16 », по нажатию « ItIsNotMe» – «Это не я».
 ![image](https://github.com/user-attachments/assets/36fcd87d-b8db-42f0-a991-89a90d13cdee) ![image](https://github.com/user-attachments/assets/3fe05662-0ba5-499a-a140-47e73e844d37) ![image](https://github.com/user-attachments/assets/8bf1ded6-4adc-4f21-9702-fc402462f0db)
 
+MainActivity инициализирует UI-элементы через findViewById() и назначает обработчики: клик по btnWhoAmI изменяет текст, а onMyButtonClick(), вызываемый из XML, переключает CheckBox и текст. ViewCompat.setOnApplyWindowInsetsListener() корректирует отступы под системные бары, а EdgeToEdge.enable(this) включает полноэкранный режим. Код демонстрирует два подхода к обработке событий: программный и декларативный, управляя состоянием виджетов методами setText() и setChecked().
 
 package com.mirea.kuzminavv.buttonclicker;
 
@@ -130,7 +131,9 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+**Выводы** 
 
+В ходе данной работы было изучено создание простых Android-приложений: верстка экранов в XML, привязка кнопок и других элементов к коду через `findViewById()`, а также обработка нажатия разными способами (через `setOnClickListener`, через атрибут `onClick` в XML). Была изучена базовая логика Android-разработки: от создания проекта до запуска рабочего приложения с интерактивными элементами.
 
 
 
