@@ -1,9 +1,9 @@
 Для начала был создан новый проект "Lesson2". Далее создан первый модуль «ActivityLifecycle». 
 ![image](https://github.com/user-attachments/assets/639faba7-54c1-4beb-86a4-1e4b28bbbf9f)
-Были переопределены основные методы жизненного цикла родительского класса, а именно onStart(), onRestoreInstanceState(Bundle savedInstanceState), onRestart(), onPause(), onStop(), onSaveInstanceState(Bundle savedInstanceState), onResume(), onDestroy(). Метод onCreate() был переопределен изначально. Было добавлено в разметку «activity_main.xml» поле текстового ввода
-«EditText» и реализовано отображение состояния «activity» используя класс «Log». 
+Были переопределены основные методы жизненного цикла родительского класса, а именно onStart(), onRestoreInstanceState(Bundle savedInstanceState), onRestart(), onPause(), onStop(), onSaveInstanceState(Bundle savedInstanceState), onResume(), onDestroy(). Метод onCreate() был переопределен изначально. Было реализовано отображение состояния «activity» используя класс «Log». 
 ![image](https://github.com/user-attachments/assets/c92acce2-c98e-4275-bf26-e1f6d0a8e7e0)
-
+Далее было добавлено в разметку «activity_main.xml» поле текстового ввода
+«EditText».
 ![image](https://github.com/user-attachments/assets/aa2c9853-5a76-43a0-9b7a-26cecb59fb4a)
 
 ![3](https://github.com/user-attachments/assets/3b2e7f73-1151-4188-92d8-206024c51193)
