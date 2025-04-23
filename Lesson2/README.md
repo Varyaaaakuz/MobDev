@@ -57,9 +57,14 @@
 ![image](https://github.com/user-attachments/assets/e3325563-701f-4a03-8875-fdc9c739e1e2)
 Был создан новый модуль «Dialog». Далее был создан новый класс AlertDialogFragment.
 В файл «activity_main.xml» была добавлена кнопка и установлены необходимые значения полей. В созданном классе был переопределен метод «onCreateDialog».
+В результате выполнения задания по нажатию кнопки вызывается диалоговое окно с кнопками каждого типа: «Positive», «Neutral» и «Negative». Для каждой кнопки используется один из методов с префиксом «set...Button», которые принимают в качестве параметров надпись для кнопки и интерфейс
+«DialogInterface.OnClickListener», определяющий действие при нажатии. 
 ![image](https://github.com/user-attachments/assets/1246c06c-40b4-41a6-a592-811145b465ee)
+Далее были изучены «snackbar», «TimePickerDialog», «DatePickerDialog» и «ProgressDialog». Было создано три класса и сконструированы диалоговые окна. Добавлены в activity_main.xml 3 кнопки и реализован вызов данных окон.
+MyTimeDialogFragment - диалоговое окно для ввода времени
 ![image](https://github.com/user-attachments/assets/2b017a61-f778-419f-b73b-fb6d9d3cc5a5)
+MyDateDialogFragment - диалоговое окно для выбора даты
 ![image](https://github.com/user-attachments/assets/248a9bde-e80a-49c1-9711-d5db2d4446f7)
+MyProgressDialogFragment - диалоговое окно загрузки
 ![image](https://github.com/user-attachments/assets/4862f4f6-952a-4ef8-a94e-984aa6b74e5b)
-
 
