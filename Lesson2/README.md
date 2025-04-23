@@ -30,6 +30,9 @@
 Были переопределены основные методы жизненного цикла у обеих «Activity». Изучен жизненный цикл каждой из активностей.
 ![image](https://github.com/user-attachments/assets/1e5bbed6-2560-4bf4-ac20-22c5470dc789)
 ![image](https://github.com/user-attachments/assets/5049b935-04d1-4b75-8eaa-54633653ffcf)
+Был создан новый модуль «IntentFilter». В разметку «activity_main.xml» была добавлена одна кнопка, а также обработчик нажатия для вызова веб-браузера.
+Далее была добавлена дополнительная кнопка для передачи ФИО студента и университета в
+другое приложение.
 ![image](https://github.com/user-attachments/assets/5b03828a-fad7-4787-bf4e-a03ffa87938d)
 ![image](https://github.com/user-attachments/assets/7edfac81-5599-4dae-a450-c567b1897232)
 ![image](https://github.com/user-attachments/assets/19b757ca-3e28-49f9-a4ca-f4186d5b476b)
