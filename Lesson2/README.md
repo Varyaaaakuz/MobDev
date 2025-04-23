@@ -37,7 +37,10 @@
 ![image](https://github.com/user-attachments/assets/7edfac81-5599-4dae-a450-c567b1897232)
 ![image](https://github.com/user-attachments/assets/19b757ca-3e28-49f9-a4ca-f4186d5b476b)
 Был создан новый модуль «ToastApp». Добавлено поле ввода и кнопка.
-Был реализован подсчет количества символов в поле ввода, а также было реализовано отображение сообщения «Toast».
+Был реализован подсчет количества символов в поле ввода, а также было реализовано отображение сообщения «Toast». 
+Для создания всплывающего уведомления необходимо было инициализировать
+экземпляр класса «Toast» при помощи метода «makeText», а затем вызвать метод
+«show» для отображения сообщения на экране.
 ![image](https://github.com/user-attachments/assets/1b385475-95f4-40b4-8ef3-babc5e2dc98e)
 ![image](https://github.com/user-attachments/assets/12c695b4-d265-4218-89e9-d3a474b6c6db)
 ![image](https://github.com/user-attachments/assets/aef790dd-8cb2-4704-830d-81d57922f800)
