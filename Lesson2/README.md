@@ -1,12 +1,24 @@
 Для начала был создан новый проект "Lesson2". Далее создан первый модуль «ActivityLifecycle». 
 ![image](https://github.com/user-attachments/assets/639faba7-54c1-4beb-86a4-1e4b28bbbf9f)
-Были переопределены основные методы жизненного цикла родительского класса, а именно onStart(), onRestoreInstanceState(Bundle savedInstanceState), onRestart(), onPause(), onStop(), onSaveInstanceState(Bundle savedInstanceState), onResume(), onDestroy(). Метод onCreate() был переопределен изначально. Было реализовано отображение состояния «activity» используя класс «Log». 
+Были переопределены основные методы жизненного цикла родительского класса, а именно onStart(), onRestoreInstanceState(Bundle savedInstanceState), onRestart(), onPause(), onStop(), onSaveInstanceState(Bundle savedInstanceState), onResume(), onDestroy().
+Метод onCreate() был переопределен изначально. Было реализовано отображение состояния «activity» используя класс «Log». 
 ![image](https://github.com/user-attachments/assets/c92acce2-c98e-4275-bf26-e1f6d0a8e7e0)
 Далее было добавлено в разметку «activity_main.xml» поле текстового ввода
 «EditText».
 ![image](https://github.com/user-attachments/assets/aa2c9853-5a76-43a0-9b7a-26cecb59fb4a)
-
+Далее был осуществлен запуск проекта и изучены сообщения в окне «logcat». Сначала были внесены изменения в поле ввода текста, а затем был сделан выход на «Главный экран» (кнопка «Home»).
 ![3](https://github.com/user-attachments/assets/3b2e7f73-1151-4188-92d8-206024c51193)
+Вопросы:
+1. Будет ли вызван метод «onCreate» после нажатия на кнопку «Home» и возврата
+в приложение?
+2. Изменится ли значение поля «EditText» после нажатия на кнопку «Home» и
+возврата в приложение?
+3. Изменится ли значение поля «EditText» после нажатия на кнопку «Back» и
+возврата в приложение?
+Ответы:
+1. Нет, onCreate вызывается только при первом создании Activity или после её полного уничтожения (например, системой для освобождения памяти). При нажатии Home активность переходит в фоновый режим, и при возврате срабатывают onRestart(), onStart() и onResume().
+2. Нет, введённый текст останется без изменений. Поскольку Activity не уничтожается, её состояние (включая содержимое EditText) сохраняется в памяти.
+3. Да, при нажатии кнопки Back значение в EditText не сохранится, так как Activity полностью завершается (onDestroy()), и все UI-состояния, включая введённый текст, сбрасываются. При повторном запуске приложения создаётся новая Activity с пустым EditText.
 ![image](https://github.com/user-attachments/assets/d4490df6-3bd3-438f-8044-906e7559d40a)
 ![image](https://github.com/user-attachments/assets/d9a71a46-38c8-4856-b933-f1c7a645e645)
 ![image](https://github.com/user-attachments/assets/1e5bbed6-2560-4bf4-ac20-22c5470dc789)
