@@ -27,6 +27,7 @@
 В первую «activity» добавлено поле ввода и кнопка «Отправить». На второй «activity» отображено значение поля первой активности в «TextView».
 ![image](https://github.com/user-attachments/assets/d4490df6-3bd3-438f-8044-906e7559d40a)
 ![image](https://github.com/user-attachments/assets/d9a71a46-38c8-4856-b933-f1c7a645e645)
+Были переопределены основные методы жизненного цикла у обеих «Activity». Изучен жизненный цикл каждой из активностей.
 ![image](https://github.com/user-attachments/assets/1e5bbed6-2560-4bf4-ac20-22c5470dc789)
 ![image](https://github.com/user-attachments/assets/5049b935-04d1-4b75-8eaa-54633653ffcf)
 ![image](https://github.com/user-attachments/assets/5b03828a-fad7-4787-bf4e-a03ffa87938d)
