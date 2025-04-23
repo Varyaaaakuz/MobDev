@@ -1,3 +1,4 @@
+Для начала был создан новый проект "Lesson2".
 ![image](https://github.com/user-attachments/assets/639faba7-54c1-4beb-86a4-1e4b28bbbf9f)
 
 ![image](https://github.com/user-attachments/assets/c92acce2-c98e-4275-bf26-e1f6d0a8e7e0)
