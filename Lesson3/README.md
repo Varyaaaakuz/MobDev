@@ -30,11 +30,13 @@
 ![image](https://github.com/user-attachments/assets/405d56af-b00f-491d-810b-0f335cce525a)
 Результат нажатия на кнопку «открыть карту».
 ![image](https://github.com/user-attachments/assets/2fdac63b-d46c-4957-a102-ada9341813ce)
-Был создан новый модуль SimpleFragmentApp
+Был создан новый модуль SimpleFragmentApp. Далее созданы были два фрагмента FirstFragment и SecondFragment. Следующим этапом было добавление горизонтальной ориентации в разрабатываемое приложение. Для этого необходимо было создать дополнительный файл разметки для activity_main.xml: New-> Android Resource File. В меню был выбран «Orientation» и установлены необходимые значения.
 ![image](https://github.com/user-attachments/assets/90c83157-68d0-4720-a07f-d7545a35e863)
+Далее был модифицирован activity_main.xml. Необходимо было добавить 2 кнопки для переключения между фрагментами. Также в разметку требовалось добавить FrameLayout – контейнер, в котором происходит вся работа с фрагментами.
 ![image](https://github.com/user-attachments/assets/0bdca6b9-907f-4a61-a78a-d1efa886ceee)
 ![image](https://github.com/user-attachments/assets/eeaf7e96-bb27-4e4d-b132-59be9bb41343)
 ![image](https://github.com/user-attachments/assets/cedd7b03-05e9-4c28-8494-dff99f0910c8)
+
 ![image](https://github.com/user-attachments/assets/09a97197-ce68-49e7-815a-533b0ffb2b31)
 ![image](https://github.com/user-attachments/assets/34b11a66-17d6-4a55-890b-53016b820251)
 ![image](https://github.com/user-attachments/assets/89d5cae9-21eb-48ac-8042-4a5567b241c6)
