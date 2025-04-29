@@ -5,9 +5,12 @@
 Необходимо было получить в первой активности системное время, а далее требуется передать время из одной активности в другую и отобразить во второй activity в «textView» квадрат номера в группе и текущее время. Результаты работы представлены ниже:
 ![image](https://github.com/user-attachments/assets/73012ae1-5281-4713-b8ae-b5811f6f0776)
 ![image](https://github.com/user-attachments/assets/128c7ee0-1728-451e-a23d-f766dd843479)
-
+Далее был создан новый модуль Sharer.
 ![image](https://github.com/user-attachments/assets/72b41449-0789-435d-9b60-8cb08f4a38e1)
+Для того, чтобы разрабатываемая активность имела возможность обрабатывать подобные намерения, требуется указать дополнительные значения в манифест-файле:
+Тэг «action» сообщает ОС «Android» о том, что активность может обрабатывать действие «ACTION_SEND». Фильтр «category» должен включать категорию «DEFAULT», в противном случае он не сможет получать неявные намерения. В поле «mimeType» указываются типы данных, которые могут обрабатываться активностью.
 ![image](https://github.com/user-attachments/assets/8059142f-92a2-4c3a-83a5-b4690e02e93c)
+Результатом работы является вызов диалогового окна выбора приложения для обработки намерения после запуска самого приложения.
 ![image](https://github.com/user-attachments/assets/eb5a8a07-4aeb-4c52-ac11-ca2bf9fd420b)
 ![image](https://github.com/user-attachments/assets/f7923893-70be-4007-802a-9f6c86d6f322)
 ![image](https://github.com/user-attachments/assets/3c88e880-2ddd-4383-855f-6ad52ee5c68e)
@@ -26,4 +29,4 @@
 ![image](https://github.com/user-attachments/assets/89d5cae9-21eb-48ac-8042-4a5567b241c6)
 
 
-и
+
