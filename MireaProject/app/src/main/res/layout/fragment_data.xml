@@ -1,0 +1,53 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_text"
+            style="@style/TextAppearance.Material3.HeadlineLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Депрессия: когда пора бить тревогу"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/content_text"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:fadingEdge="vertical"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Самая важная фраза, которая должна насторожить вас: «Мне ничего не хочется». Не хочется идти на работу или учебу, не хочется есть или сидеть за компьютером, не хочется читать книгу или общаться с друзьями. Такая тотальная утрата интереса к жизни — не норма. Депрессия часто лишена ярких симптомов расстройства, характерных для периода переживания какой-то личной трагедии: человек может обходиться без слез, жалоб друзьям и истерик. Напротив, он замыкается в себе и минимизирует любые контакты с окружающими. Нет ничего предосудительного в том, что кто-то из нас время от времени хочет побыть в одиночестве. Но когда подавленность и замкнутость растягивается на недели и месяцы, отражается на работе и личной жизни, нужно бить тревогу.
+Дружеские призывы собраться с духом и отвлечься от тяжелых мыслей, как правило, не приводят к ощутимому результату. Попробуйте-ка заставить заняться физкультурой человека, болеющего гриппом или, например, лежащего пластом после тяжелого отравления, — толку не будет. Но и бросать больного депрессией на произвол судьбы, обижаясь на его безразличие ко всем, тоже ни в коем случае нельзя."
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp">
+
+            <ImageView
+                android:id="@+id/industry_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu_gallery" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
