@@ -24,13 +24,13 @@
 Был оформлен экран activity_main.xml, на экране размещены три кнопки (обработка нажатий реализована через setOnClickListener). В классе MainActivity реализованы 3 метода, реагирующие на нажатие кнопок.
 ![image](https://github.com/user-attachments/assets/3a386b06-41c7-43d6-aaf2-3f30eacf7e39)
 ![image](https://github.com/user-attachments/assets/e2d564dd-6a93-4ae9-a7e9-ced419493f7a)
-Результат нажатия на кнопку «позвонить».
+Результат нажатия на кнопку «позвонить»:
 
 ![image](https://github.com/user-attachments/assets/5c7967d4-c8d0-4e5b-ab49-113b06b06277)
-Результат нажатия на кнопку «открыть браузер».
+Результат нажатия на кнопку «открыть браузер»:
 
 ![image](https://github.com/user-attachments/assets/405d56af-b00f-491d-810b-0f335cce525a)
-Результат нажатия на кнопку «открыть карту».
+Результат нажатия на кнопку «открыть карту»:
 
 ![image](https://github.com/user-attachments/assets/2fdac63b-d46c-4957-a102-ada9341813ce)
 
