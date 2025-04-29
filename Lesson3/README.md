@@ -1,6 +1,8 @@
-Для начала был создан новый проект Lesson 3, а также новый модуль IntentApp. Даллее создали вторую активность SecondActivity.
+Для начала был создан новый проект Lesson 3, а также новый модуль IntentApp. Далее создали вторую активность SecondActivity.
 ![image](https://github.com/user-attachments/assets/a2371b15-3ec1-43fe-999e-ef5f1a61e5ff)
+Была осуществлена проверка записи о новой активности в manifest-файле.
 ![image](https://github.com/user-attachments/assets/2472a36d-c7a8-42d8-9478-d119651e6577)
+Необходимо было получить в первой активности системное время, а далее требуется передать время из одной активности в другую и отобразить во второй activity в «textView» квадрат номера в группе и текущее время.
 ![image](https://github.com/user-attachments/assets/73012ae1-5281-4713-b8ae-b5811f6f0776)
 ![image](https://github.com/user-attachments/assets/128c7ee0-1728-451e-a23d-f766dd843479)
 ![image](https://github.com/user-attachments/assets/72b41449-0789-435d-9b60-8cb08f4a38e1)
