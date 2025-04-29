@@ -19,6 +19,7 @@
 ![image](https://github.com/user-attachments/assets/cedd7b03-05e9-4c28-8494-dff99f0910c8)
 ![image](https://github.com/user-attachments/assets/09a97197-ce68-49e7-815a-533b0ffb2b31)
 ![image](https://github.com/user-attachments/assets/34b11a66-17d6-4a55-890b-53016b820251)
+![image](https://github.com/user-attachments/assets/89d5cae9-21eb-48ac-8042-4a5567b241c6)
 
 
 и
