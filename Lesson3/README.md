@@ -1,3 +1,4 @@
+Для начала был создан новый проект Lesson 3, а также новый модуль IntentApp. Даллее создали вторую активность SecondActivity.
 ![image](https://github.com/user-attachments/assets/a2371b15-3ec1-43fe-999e-ef5f1a61e5ff)
 ![image](https://github.com/user-attachments/assets/2472a36d-c7a8-42d8-9478-d119651e6577)
 ![image](https://github.com/user-attachments/assets/73012ae1-5281-4713-b8ae-b5811f6f0776)
