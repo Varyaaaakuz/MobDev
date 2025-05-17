@@ -37,6 +37,10 @@
 Выводы в logcat:
 
 ![image](https://github.com/user-attachments/assets/2a3fe29b-5aec-46e8-8cdc-a1e74350202e)
+
+Был создан модуль «looper», а также класс «MyLooper». Для создания «Looper», вызывается статический метод «Looper.prepare». Созданный «Looper» связан с потоком, в котором вызван этот метод. Для запуска «Looper» используется статический метод «Looper.loop». Между вызовами
+методов «prepare» и «loop» создан экземпляр класса «Handler», который обрабатывает сообщения, приходящие в «MessageQueue».
+
 ![image](https://github.com/user-attachments/assets/b8925d57-a035-4430-af96-dd11bcbe41da)
 ![image](https://github.com/user-attachments/assets/51be7c04-e615-4765-968f-d960147a9f8f)
 ![image](https://github.com/user-attachments/assets/2c9e2774-080e-46c0-bf7b-913170798752)
