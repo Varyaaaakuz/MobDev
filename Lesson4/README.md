@@ -1,5 +1,8 @@
 Для начала был создан новый проект Lesson4, а далее модуль mplayer. В данном модуле был создан экран музыкального плеера с использованием «binding» для горизонтальной и портретной ориентации.
-
+В файл сборки модуля «gradle» была добавлена необходимая запись: 
+buildFeatures {
+        viewBinding = true
+    }
 ![image](https://github.com/user-attachments/assets/b2456645-8d45-4ad7-86d5-79399129fa1f)
 ![image](https://github.com/user-attachments/assets/0b376964-3ff3-4efd-abf3-045e0d8c8da9)
 ![image](https://github.com/user-attachments/assets/78126368-5e60-4d91-b248-c685db5133dd)
