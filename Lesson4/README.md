@@ -21,10 +21,21 @@
 ![image](https://github.com/user-attachments/assets/78126368-5e60-4d91-b248-c685db5133dd)
 ![image](https://github.com/user-attachments/assets/d138ceec-e9e4-449a-afca-ed0c83a9e77f)
 
+Был создан новый модуль «data_thread», в котором создаётся 3 «Runnable» в методе «onCreate» и изменение экрана выполняется внутри метода «run». Первые два метода похожи и отправляют «Runnable» на немедленную обработку. Третий метод позволяет указать задержку выполнения «Runnable».
+
+Была определена последовательность запуска процессов. Также были изучены методы «runOnUiThread», «postDelayed», «post». В «TextViwe» описаны в чём различия между элементами и последовательность запуска.
+
+Экран приложения с описанием:
+
 ![image](https://github.com/user-attachments/assets/5ecb8a15-44d4-4cd0-9eb0-e34ba3ccb73c)
-![image](https://github.com/user-attachments/assets/c21b1684-e064-48e4-a411-1590a1a3610c)
-![image](https://github.com/user-attachments/assets/b1bc8377-eb6a-4971-a1eb-c50328756df7)
+
+Последовательность процессов:
+
+![image](https://github.com/user-attachments/assets/c21b1684-e064-48e4-a411-1590a1a3610c) ![image](https://github.com/user-attachments/assets/b1bc8377-eb6a-4971-a1eb-c50328756df7)
 ![image](https://github.com/user-attachments/assets/156a1b30-4dc7-469f-91af-73c49e83aa3d)
+
+Выводы в logcat:
+
 ![image](https://github.com/user-attachments/assets/2a3fe29b-5aec-46e8-8cdc-a1e74350202e)
 ![image](https://github.com/user-attachments/assets/b8925d57-a035-4430-af96-dd11bcbe41da)
 ![image](https://github.com/user-attachments/assets/51be7c04-e615-4765-968f-d960147a9f8f)
