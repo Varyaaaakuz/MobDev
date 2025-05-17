@@ -43,8 +43,15 @@
 
 В методе OnClick создается объект класса Message, в который передаются объект Bundle с передаваемыми значениями. Данное сообщение передаётся в «MessageQueue» через метод «sendMessage».
 
+В данном задании необходимо было реализовать приложении, в котором вводится возраст и профессия. Количество лет соответствует времени задержки, а результат вычисления
+осуществлять через Log.d.
+
+Интерфейс и MainActivity:
 
 ![image](https://github.com/user-attachments/assets/b8925d57-a035-4430-af96-dd11bcbe41da)
+
+Результат в Logcat:
+
 ![image](https://github.com/user-attachments/assets/51be7c04-e615-4765-968f-d960147a9f8f)
 ![image](https://github.com/user-attachments/assets/2c9e2774-080e-46c0-bf7b-913170798752)
 ![image](https://github.com/user-attachments/assets/20786399-6f69-4cdc-a2fd-1416e491d738)
