@@ -10,6 +10,11 @@
 Результат экрана плеера горизонтальной ориентации:
 
 ![image](https://github.com/user-attachments/assets/0b376964-3ff3-4efd-abf3-045e0d8c8da9)
+
+Далее был создан новый модуль «thread», на экране которого размещены элементы «Button» и «TextView». Инициализация графических компонентов осуществлена с помощью «Binding».
+Посчитать в фоновом потоке среднее количество пар в день за период одного
+месяца. Общее количество пар и учебных дней вводятся в главном экране.
+Отобразить результат в «TextView».
 ![image](https://github.com/user-attachments/assets/78126368-5e60-4d91-b248-c685db5133dd)
 ![image](https://github.com/user-attachments/assets/d138ceec-e9e4-449a-afca-ed0c83a9e77f)
 ![image](https://github.com/user-attachments/assets/5ecb8a15-44d4-4cd0-9eb0-e34ba3ccb73c)
