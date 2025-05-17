@@ -1,3 +1,5 @@
+Для начала был создан новый проект Lesson4, а далее модуль mplayer. В данном модуле был создан экран музыкального плеера с использованием «binding» для горизонтальной и портретной ориентации.
+
 ![image](https://github.com/user-attachments/assets/b2456645-8d45-4ad7-86d5-79399129fa1f)
 ![image](https://github.com/user-attachments/assets/0b376964-3ff3-4efd-abf3-045e0d8c8da9)
 ![image](https://github.com/user-attachments/assets/78126368-5e60-4d91-b248-c685db5133dd)
@@ -13,47 +15,6 @@
 ![image](https://github.com/user-attachments/assets/20786399-6f69-4cdc-a2fd-1416e491d738)
 ![image](https://github.com/user-attachments/assets/cf03c55b-a176-4e14-97a0-6635fba19093)
 ![image](https://github.com/user-attachments/assets/208629e3-4c20-435c-9de1-a9f7fe8adbf5)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 В проекте «MireaProject» был создан отдельный фрагмент BackgroundTaskFragment для выполнения фоновой
 задачи. Выполнение задачи было реализовано с помощью применения механизма «Worker». Был создан дополнительный макет, а также добавлен фрагмент в навигацию. 
