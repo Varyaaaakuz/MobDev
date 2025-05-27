@@ -39,4 +39,21 @@
         android:name="ru.mirea.kuzmina.mireaproject.BackgroundTaskFragment"
         android:label="Фоновая задача"
         tools:layout="@layout/fragment_background_task" />
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="ru.mirea.kuzmina.mireaproject.CompassFragment"
+        android:label="Компас"
+        tools:layout="@layout/fragment_compass" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.kuzmina.mireaproject.CollageFragment"
+        android:label="Камера"
+        tools:layout="@layout/fragment_collage" />
+
+    <fragment
+        android:id="@+id/nav_microphone"
+        android:name="ru.mirea.kuzmina.mireaproject.AudioNoteFragment"
+        android:label="Микрофон"
+        tools:layout="@layout/fragment_audio_note" />
 </navigation>

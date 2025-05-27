@@ -28,5 +28,17 @@
             android:id="@+id/nav_background_task"
             android:icon="@android:drawable/ic_popup_sync"
             android:title="BackgroundTask"/>
+        <item
+            android:id="@+id/nav_compass"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="Compass"/>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="Collage"/>
+        <item
+            android:id="@+id/nav_microphone"
+            android:icon="@drawable/ic_microphone"
+            android:title="AudioNotes"/>
     </group>
 </menu>

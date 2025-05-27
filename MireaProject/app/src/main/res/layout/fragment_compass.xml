@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/direction_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ожидание данных..."
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/compass_image1"
+        android:layout_width="156dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/compass_image"
+        android:layout_width="381dp"
+        android:layout_height="134dp"
+        android:rotation="90"
+        android:src="?attr/homeAsUpIndicator" />
+
+</LinearLayout>
