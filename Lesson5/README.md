@@ -19,6 +19,7 @@
 ![image](https://github.com/user-attachments/assets/b4898dca-588c-4a99-af81-93d81fb98abf)
 
 Результат нажатия на картинку: камера и сохранение фото в папку, отображение фото на экране.
+
 ![image](https://github.com/user-attachments/assets/3245026c-3341-4ce0-bc09-5976781e9703)
 ![image](https://github.com/user-attachments/assets/64e26dbc-8033-4d1c-9659-c4be6fc60f31)
 
