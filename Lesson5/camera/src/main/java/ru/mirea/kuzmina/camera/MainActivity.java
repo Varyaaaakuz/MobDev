@@ -39,11 +39,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // ДОБАВИТЬ ФАЙЛ РАЗМЕТКИ
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // ДОБАВИТЬ ПРОВЕРКУ НА НАЛИЧИЕ РАЗРЕШЕНИЙ
         int permissionStatus = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
         int storagePermissionStatus = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
@@ -55,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
                     REQUEST_CODE_PERMISSION);
         }
 
-        // Создание функции обработки результата от системного приложения «камера»
         ActivityResultCallback<ActivityResult> callback = new ActivityResultCallback<ActivityResult>() {
             @Override
             public void onActivityResult(ActivityResult result) {
@@ -70,16 +67,14 @@ public class MainActivity extends AppCompatActivity {
                 new ActivityResultContracts.StartActivityForResult(),
                 callback);
 
-        // Обработчик нажатия на компонент «imageView»
         binding.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                // проверка на наличие разрешений для камеры
+
                 if (isWork) {
                     try {
                         File photoFile = createImageFile();
-                        // генерирование пути к файлу на основе authorities
                         String authorities = getApplicationContext().getPackageName() + ".fileprovider";
                         imageUri = FileProvider.getUriForFile(MainActivity.this, authorities, photoFile);
                         cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);

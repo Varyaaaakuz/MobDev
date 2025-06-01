@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        // Проверка разрешений
         int audioRecordPermissionStatus = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO);
         int storagePermissionStatus = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
@@ -59,15 +57,11 @@ public class MainActivity extends AppCompatActivity {
                     REQUEST_CODE_PERMISSION);
         }
 
-        // Инициализация кнопок
         recordButton = binding.button;
         playButton = binding.button2;
         playButton.setEnabled(false);
-
-        // Создание пути для записи
         recordFilePath = (new File(getExternalFilesDir(Environment.DIRECTORY_MUSIC),
                 "/audiorecordtest.3gp")).getAbsolutePath();
-
         recordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
                 isStartRecording = !isStartRecording;
             }
         });
-
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -29,12 +29,10 @@ public class MainActivity extends AppCompatActivity {
         addRussianSuperheroes();
         showAllHeroes();
     }
-
     private void showAllHeroes() {
         List<Superhero> allHeroes = superheroDao.getAll();
         showHeroesList(allHeroes);
     }
-
     private void showHeroesList(List<Superhero> heroes) {
         if (heroes.isEmpty()) {
             heroesTextView.setText("В базе данных нет супергероев");
