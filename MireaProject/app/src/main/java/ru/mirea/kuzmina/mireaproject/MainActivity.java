@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -21,9 +22,13 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 import ru.mirea.kuzmina.mireaproject.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements FileFragment.FileDialogListener{
     private static final int REQUEST_CODE_PERMISSIONS = 200;
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
@@ -40,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Настройка Toolbar и Navigation Drawer
         setSupportActionBar(binding.appBarMain.toolbar);
-        binding.appBarMain.fab.setOnClickListener(view ->
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show());
-
+        binding.appBarMain.fab.setOnClickListener(view -> {
+            FileFragment dialog = new FileFragment();
+            dialog.show(getSupportFragmentManager(), "FileDialog");
+        });
         setupNavigation();
     }
 
@@ -85,7 +90,9 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_webview,
                 R.id.nav_compass,
                 R.id.nav_camera,
-                R.id.nav_microphone)
+                R.id.nav_microphone,
+                R.id.nav_profile,
+                R.id.nav_files)
                 .setOpenableLayout(drawer)
                 .build();
 
@@ -120,5 +127,29 @@ public class MainActivity extends AppCompatActivity {
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration) || super.onSupportNavigateUp();
+    }
+    @Override
+    public void onDialogSave(String filename, String content) {
+        // Тут сохраняем файл и обновляем список файлов
+        try {
+            File file = new File(getFilesDir(), filename);
+            FileOutputStream fos = new FileOutputStream(file);
+            fos.write(content.getBytes());
+            fos.close();
+
+            // Обновляем список файлов
+            if (getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main) != null) {
+                Fragment fragment = getSupportFragmentManager()
+                        .findFragmentById(R.id.nav_host_fragment_content_main);
+                if (fragment instanceof WorkingWithFilesFragment) {
+                    ((WorkingWithFilesFragment) fragment).updateFileList();
+                }
+            }
+
+            Toast.makeText(this, "Файл сохранён", Toast.LENGTH_SHORT).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            Toast.makeText(this, "Ошибка при сохранении файла", Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextText8"
+            android:layout_width="405dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Введите ваше имя"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextText10"
+            android:layout_width="410dp"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Введите ваш возраст"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.162" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="183dp"
+            android:layout_height="66dp"
+            android:text="Сохранить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.548" />
+
+        <EditText
+            android:id="@+id/editTextText11"
+            android:layout_width="417dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Введите группу"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.281" />
+
+        <EditText
+            android:id="@+id/editTextText12"
+            android:layout_width="410dp"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Введите ваше хобби"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.394" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

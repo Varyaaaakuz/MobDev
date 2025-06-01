@@ -40,5 +40,13 @@
             android:id="@+id/nav_microphone"
             android:icon="@drawable/ic_microphone"
             android:title="AudioNotes"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile_foreground"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_files"
+            android:icon="@drawable/ic_files_foreground"
+            android:title="Files" />
     </group>
 </menu>
