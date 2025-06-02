@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         binding.button.setOnClickListener(v -> new GetTimeTask().execute());
     }
     private class GetTimeTask extends AsyncTask<Void, Void, String> {
-        private String foundHost = "";
         @Override
         protected String doInBackground(Void... params) {
             for (String host : hosts) {
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
                     reader.readLine();
                     String line = reader.readLine();
                     if (line != null && !line.trim().isEmpty() && !line.toLowerCase().startsWith("denied")) {
-                        foundHost = host;
                         return line.trim();
                     }
                 } catch (SocketTimeoutException e) {
@@ -68,16 +66,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             if (result == null || result.isEmpty()) {
-                binding.TextViewDate.setText("Источник: нет");
                 binding.TextViewTime.setText("Время: ");
                 return;
             }
             String[] parts = result.split("\\s+");
             if (parts.length >= 3) {
-                binding.TextViewDate.setText("Источник: " + foundHost + "\nДата: " + parts[1]);
+                binding.TextViewDate.setText("Дата: " + parts[1]);
                 binding.TextViewTime.setText("Время: " + parts[2]);
             } else {
-                binding.TextViewDate.setText("Источник: " + foundHost);
                 binding.TextViewTime.setText("Время: ");
             }
         }
