@@ -48,5 +48,9 @@
             android:id="@+id/nav_files"
             android:icon="@drawable/ic_files_foreground"
             android:title="Files" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather_foreground"
+            android:title="Weather" />
     </group>
 </menu>

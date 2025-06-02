@@ -37,7 +37,6 @@ public class WorkingWithFilesFragment extends Fragment {
 
         fab.setOnClickListener(v -> {
             FileFragment dialog = new FileFragment();
-            // Не устанавливаем targetFragment, чтобы слушателем была активити
             dialog.show(requireActivity().getSupportFragmentManager(), "FileDialog");
         });
 

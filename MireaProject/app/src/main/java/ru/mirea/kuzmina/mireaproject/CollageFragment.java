@@ -25,16 +25,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
-
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 public class CollageFragment extends Fragment {
-
     private ImageView imageView;
     private final int CAMERA_REQUEST = 101;
 
@@ -43,7 +35,6 @@ public class CollageFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_collage, container, false);
         imageView = view.findViewById(R.id.image_view);
         Button btnTakePhoto = view.findViewById(R.id.capture_button);
-
         btnTakePhoto.setOnClickListener(v -> {
             if (ContextCompat.checkSelfPermission(requireContext(), android.Manifest.permission.CAMERA)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -52,15 +43,12 @@ public class CollageFragment extends Fragment {
                 takePicture();
             }
         });
-
         return view;
     }
-
     private void takePicture() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, CAMERA_REQUEST);
     }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK && data != null) {

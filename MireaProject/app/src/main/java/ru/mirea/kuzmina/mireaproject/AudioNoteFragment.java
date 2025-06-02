@@ -26,10 +26,9 @@ public class AudioNoteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_audio_note, container, false);
         recordBtn = view.findViewById(R.id.record_button);
-        playButton = view.findViewById(R.id.play_button); // ищем кнопку воспроизведения
+        playButton = view.findViewById(R.id.play_button);
         outputFile = requireContext().getExternalCacheDir().getAbsolutePath() + "/recording.3gp";
 
-        // изначально делаем кнопку недоступной
         playButton.setEnabled(false);
 
         recordBtn.setOnClickListener(v -> {
@@ -41,7 +40,6 @@ public class AudioNoteFragment extends Fragment {
             }
         });
 
-        // добавляем слушатель для кнопки воспроизведения
         playButton.setOnClickListener(v -> {
             playAudio();
         });
@@ -74,7 +72,6 @@ public class AudioNoteFragment extends Fragment {
             e.printStackTrace();
         }
 
-        // отключаем кнопку воспроизведения во время записи
         playButton.setEnabled(false);
     }
 
@@ -83,8 +80,6 @@ public class AudioNoteFragment extends Fragment {
             recorder.stop();
             recorder.release();
             recorder = null;
-
-            // после остановки записи включаем кнопку воспроизведения
             playButton.setEnabled(true);
         }
     }

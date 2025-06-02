@@ -1,6 +1,7 @@
 package ru.mirea.kuzmina.mireaproject;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,6 +22,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -32,18 +35,20 @@ public class MainActivity extends AppCompatActivity implements FileFragment.File
     private static final int REQUEST_CODE_PERMISSIONS = 200;
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        FirebaseUser user = auth.getCurrentUser();
+        if (user == null) {
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Проверка и запрос разрешений
         checkAndRequestPermissions();
-
-        // Настройка Toolbar и Navigation Drawer
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setOnClickListener(view -> {
             FileFragment dialog = new FileFragment();
@@ -51,7 +56,6 @@ public class MainActivity extends AppCompatActivity implements FileFragment.File
         });
         setupNavigation();
     }
-
     private void checkAndRequestPermissions() {
         String[] permissions = {
                 Manifest.permission.CAMERA,
@@ -80,8 +84,6 @@ public class MainActivity extends AppCompatActivity implements FileFragment.File
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.nav_host_fragment_content_main);
         NavController navController = navHostFragment.getNavController();
-
-        // Добавьте сюда ID всех ваших фрагментов
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,
                 R.id.nav_gallery,
