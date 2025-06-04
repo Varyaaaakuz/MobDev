@@ -1,3 +1,4 @@
+Был создан новый проект Lesson 7, а также новый модуль TimeService
 ![image](https://github.com/user-attachments/assets/7f131b0b-05b5-4aca-87b1-1f3083ef974c)
 ![image](https://github.com/user-attachments/assets/5dbaeb20-15db-4be8-864e-9ce7d7e50ba2)
 ![image](https://github.com/user-attachments/assets/9f261666-21ae-49ed-ad00-3ba3f29b9e2f)
