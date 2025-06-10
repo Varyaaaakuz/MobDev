@@ -14,7 +14,7 @@
 Осуществление передачи данных в сервис погоды
 ![image](https://github.com/user-attachments/assets/c2e00211-dbbe-4e27-8068-60aaf296b3b3)
 
-Был создан новый модуль «FirebaseAuth».
+Был создан новый модуль «FirebaseAuth», в котором необходимо было реализовать изменение экрана в зависимости от состояния авторизации пользователя, а также осуществить вызов методов регистрации, верификации почтового ящика, авторизации и выход из учетной записи по действиям пользователя. 
 ![image](https://github.com/user-attachments/assets/dfa2b4e9-b3fd-4b3b-bd06-8ee9f32570fb)
 ![image](https://github.com/user-attachments/assets/e8ded648-cd92-405e-a26d-17a3c68f11ce)
 ![image](https://github.com/user-attachments/assets/eeb5f02a-b7b0-40e4-bee7-363c606b3bb4)
