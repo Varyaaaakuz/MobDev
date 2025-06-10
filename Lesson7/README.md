@@ -33,13 +33,28 @@
 Письмо, подтверждающее эл.почту:
 ![image](https://github.com/user-attachments/assets/4fd16a7a-e24c-43e9-b2aa-d96dc8068ad8)
 
+В ходе работы над контрольным заданием необходимо было добавить фрагмент, отображающий любую информацию из сетевого ресурса. 
 
+Был добавлен фрагмент, отображающий локацию устройства по IP-адресу через сервис ipinfo.io, после чего происходит запрос актуальных погодных данных — температуры, направления и скорости ветра — с использованием API open-meteo.com, и полученная информация отображается на экране.
 
+Начальный экран:
 ![image](https://github.com/user-attachments/assets/f9c73aee-4f98-4fca-a123-d6618ffc1896)
+
+Полученные данные:
 ![image](https://github.com/user-attachments/assets/6a55b97b-3c0d-4f35-9370-2259bd4d3404)
+
+Было выполнено успешное подключение «Firebase» и среды разработки. Добавлен экран входа в приложение. После успешной авторизации производится переход на главный экран. Результат ниже: 
+
+Начальная страница:
 ![image](https://github.com/user-attachments/assets/ae462a71-d0eb-41e9-97ad-b0bf5ba11e1b)
+
+Регистрация:
 ![image](https://github.com/user-attachments/assets/1c94d0f9-81e0-4f0a-aa15-f09235e18e4b)
+
+Экран после успешной регистрации:
 ![image](https://github.com/user-attachments/assets/09943abc-a913-4662-92aa-d88d598a4a7b)
+
+Данные о пользователе в базе данных:
 ![image](https://github.com/user-attachments/assets/7ec28adc-7d37-4f9f-87d3-60c2ad4a85ac)
 
 
